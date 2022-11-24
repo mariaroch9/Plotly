@@ -150,11 +150,11 @@ var resultArray = metadata.filter(metaObj => metaObj.id == sample);
 var result = resultArray[0];
 
 // 3. Create a variable that holds the washing frequency.
-var wfreq  = result.wfreq;
+var wfreq  = (result.wfreq);
 
 
 // 4. Create the trace for the gauge chart.
-var trace1 = [{
+var gaugeData = [{
   value: wfreq,
   type: "indicator",
   mode: 'gauge+number',
@@ -179,7 +179,7 @@ var gaugeLayout = {
  };
 
 // 6. Use Plotly to plot the gauge data and layout.
-Plotly.newPlot("gauge",trace1, gaugeLayout);
+Plotly.newPlot("gauge",gaugeData, gaugeLayout);
 
 });
 }

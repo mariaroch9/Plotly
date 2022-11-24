@@ -1,6 +1,13 @@
 body {
-
-  color: f0fff;
+  
+    border: 1px solid black;
+    background-color: rgba(206, 227, 234, 0.728);
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+  
+  
 }
 
 .list-group {
@@ -15,17 +22,6 @@ list-style: none;
   text-align: center;
  }
 
-
-#navbar ul {
-  padding: 15px;
-  list-style-type:none;
-  text-align:center;
-  background-color: coral;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-#navbar ul li {
-  display: inline;
-}
-
+ .boxed{
+  border: 10 px dashed;
+ }
